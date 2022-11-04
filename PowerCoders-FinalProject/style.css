@@ -1,0 +1,287 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+article{
+  padding: 0 20px;
+}
+
+article:hover{
+  background-color: #dfab44;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 2fr 0.1fr;
+  grid-template-areas:
+    "navbar-left navbar-right"
+    "aside section"
+    "footer footer";
+  font-size: 20px;
+  background-image: url("./images/Wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-area: navbar-left;
+  margin-top: 10px;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-area: navbar-right;
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #351c0e;
+}
+
+h3:hover {
+  cursor: pointer;
+  color: #c26732;
+  font-size: 25px;
+}
+
+ul {
+  padding-right: 40px;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.work-experience{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: -40px;
+}
+
+.work-experience:hover{
+  background-color: #eeae2c;
+  cursor: pointer;
+  width: 90%;
+  margin-left: -10px;
+}
+
+.work-experience li{
+  padding: 5px;
+  font-size:15px;
+}
+
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  color: #dfab44;
+}
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  /* font-weight: bold; */
+  color: #f0c674;
+  border-radius: 20px;
+}
+
+button {
+  background-color:black;
+  height: 40px;
+  border-radius: 5px;
+  color: #f0c674;
+  border: 1px solid transparent;
+}
+
+.main {
+  /* padding-top: 50px;
+  height: auto; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* align-items: space-between;
+  justify-content: space-around; */
+  grid-area: main;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: aside;
+  /* background-color: rgba(244,244,242,255); */
+  /* margin-bottom: 50px; */
+}
+
+.section {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
+  grid-area: section;
+  /* background-color: rgba(244,244,242,255); */
+  padding: 30px 50px;
+}
+
+.footer {
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: white; */
+  grid-area: footer;
+  /* background-color: #edfefe; */
+}
+
+
+
+#profile-image{
+  width:300px;
+  border-bottom-right-radius: 35%;
+  border-bottom-left-radius: 20%;
+}
+
+#profile-image:hover{
+  width:303px;
+  cursor: pointer;
+}
+
+.work:hover{
+  width: 205px;
+  cursor: pointer;
+}
+
+.work-small:hover{
+  width: 308px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 40px;
+}
+
+p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  /* background-color:#edfefe; */
+  color: #351c0e;
+}
+
+.card {
+  /* background-color:#c49e4d; */
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left:50px;
+  padding-right:50px;
+  margin:10px;
+
+  /* padding-top: 70px; */
+  justify-content: center;
+  width: 30px;
+  height: 150px;
+  color: rgb(32, 29, 26);
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #b8833f;
+  
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height:40px;
+}
+
+#skill {
+  padding:25px;
+  width: 100%;
+  height: 100%;
+  /* padding-top: 50px; */
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#detail{
+ font-size: 20px;
+}
+
+
+@media (max-width: 1242px) {
+  .container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.1fr 2fr 2fr 0.1fr;
+  grid-template-areas:
+    "navbar-left"
+    "navbar-right"
+    "aside"
+    "section"
+    "footer";
+  font-size: 20px;
+  background-image: none;
+  background-color: #b8833f;
+}
+.navbar-left {
+  height: 40px;
+}
+
+.navbar-right {
+  height: 40px;
+}
+#profil-image{
+  width:200px;
+}
+#profil-image:hover{
+  width:203px;
+}
+a {
+  font-size: 10px;
+}
+
+button {
+  height: 30px;
+}
+.card img {
+  width:20px;
+}
+.card:hover {
+  cursor: pointer;
+  background-color: #ffa734;
+  
+}
+
+}
+
+
+
